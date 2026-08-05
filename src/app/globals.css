@@ -878,24 +878,24 @@ a,
 .site-footer {
   width: 100%;
   max-width: 421px;
-  padding: 2.5rem 1.5rem 8rem;
+  padding: 0 1.5rem 8rem;
   margin: 0 auto;
   color: var(--muted);
 }
 
-.site-footer::before {
+/* .site-footer::before {
   display: block;
   width: 3.125rem;
   height: 1px;
   margin-bottom: 2.375rem;
   content: "";
   background: var(--border);
-}
+} */
 
 .site-footer__row {
   display: flex;
   gap: 0.35rem;
-  align-items: center;
+  align-items: end;
   margin: 0;
   font-size: 0.8125rem;
   font-weight: 460;
@@ -906,7 +906,6 @@ a,
 .site-footer__bunny {
   display: inline-flex;
   align-items: center;
-  margin-bottom: -3px;
   color: color-mix(in srgb, var(--foreground) 40%, transparent);
 }
 
