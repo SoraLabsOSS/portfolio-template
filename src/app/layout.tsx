@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { BottomFade } from "@/components/bottom-fade";
 import { SiteMenu } from "@/components/site-menu";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="relative min-h-dvh font-sans">
         {children}
+        <BottomFade />
         <SiteMenu />
       </body>
     </html>

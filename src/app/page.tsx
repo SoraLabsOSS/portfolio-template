@@ -1,6 +1,8 @@
+import { PageFade } from "@/components/page-fade";
+
 export default function Home() {
   return (
-    <>
+    <PageFade>
       <h1 className="sr-only">Danny Williams</h1>
       <main className="relative flex min-h-dvh items-center justify-center">
         <div className="home-lockup text-center uppercase tracking-[0.02em]">
@@ -12,6 +14,6 @@ export default function Home() {
           </p>
         </div>
       </main>
-    </>
+    </PageFade>
   );
 }
