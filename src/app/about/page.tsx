@@ -72,7 +72,7 @@ const works = [
   {
     delay: "1980ms",
     name: "Sora UI",
-    roles: [{ range: "Open source", title: "Creator" }],
+    roles: [{ range: "Side project", title: "Creator" }],
   },
   {
     delay: "2025ms",
@@ -123,7 +123,7 @@ function RoleRow({ title, range }: { title: string; range: string }) {
 export default function AboutPage() {
   return (
     <PageFade>
-      <main className="mx-auto max-w-[421px] px-6 pt-32 pb-32 sm:pt-[clamp(200px,33vh,320px)]">
+      <main className="mx-auto max-w-[421px] px-6 pt-32 pb-16 sm:pt-[clamp(200px,33vh,320px)]">
         <header className="flex flex-col items-start">
           <Image
             alt="Truong Giang"
