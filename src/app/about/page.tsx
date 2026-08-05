@@ -5,85 +5,84 @@ import { PageFade } from "@/components/page-fade";
 
 export const metadata: Metadata = {
   description:
-    "Product designer based in Halifax. Investing at Wealthsimple. Previously Stripe and Shopify.",
-  title: "About — Danny Williams",
+    "Truong Giang (Axyl) — full-stack developer building Sora UI and other side projects, based in Ho Chi Minh City.",
+  title: "About",
 };
+
+const links = [
+  {
+    delay: "1220ms",
+    href: "https://ui.soralabs.io.vn",
+    label: "Sora UI",
+  },
+  {
+    delay: "1265ms",
+    href: "https://type.soralabs.io.vn",
+    label: "Sora Type",
+  },
+  {
+    delay: "1310ms",
+    href: "https://lattice.soralabs.io.vn",
+    label: "Sora Lattice",
+  },
+  {
+    delay: "1355ms",
+    href: "https://github.com/axyl1410",
+    label: "GitHub",
+  },
+  {
+    delay: "1400ms",
+    href: "https://x.com/axyl1410",
+    label: "X",
+  },
+] as const;
 
 const skills = [
   {
-    delay: "1520ms",
-    href: "https://www.skills.sh/dannyjpwilliams/ui-sound-design-skill/ui-sound-design",
-    label: "UI Sound Design",
+    delay: "1480ms",
+    href: "https://skills.soralabs.io.vn/animating-icons/",
+    label: "Animating Icons",
   },
   {
-    delay: "1565ms",
-    href: "https://github.com/dannyjpwilliams/design-engineer-skill",
-    label: "Design Engineering",
-  },
-  {
-    delay: "1610ms",
-    href: "https://github.com/dannyjpwilliams/pressure-test-plan",
-    label: "Pressure Test Plan",
-  },
-  {
-    delay: "1655ms",
-    href: "https://github.com/dannyjpwilliams/code-crit",
-    label: "Code Crit",
+    delay: "1525ms",
+    href: "https://skills.soralabs.io.vn/motion-meaning/",
+    label: "Motion Meaning",
   },
 ] as const;
 
 const experience = [
   {
     delay: "1800ms",
-    name: "Wealthsimple",
-    roles: [
-      { range: "Jun 2026 → Present", title: "Sr. Staff product designer" },
-      { range: "Dec 2024 → Jun 2026", title: "Staff product designer" },
-    ],
+    name: "TERAX SOLUTIONS",
+    roles: [{ range: "Mar 2026 → May 2026", title: "Junior Developer" }],
   },
   {
     delay: "1845ms",
-    name: "Stripe",
-    roles: [
-      { range: "Jan 2024 → Dec 2024", title: "Staff product designer" },
-      { range: "Mar 2022 → Jan 2024", title: "Senior product designer" },
-    ],
+    name: "IMES Pro",
+    roles: [{ range: "Sep 2025 → Dec 2025", title: "Intern Developer" }],
   },
   {
     delay: "1890ms",
-    name: "Shopify",
-    roles: [
-      { range: "Jan 2020 → Feb 2022", title: "Senior product designer" },
-      { range: "Jan 2018 → Jan 2020", title: "Product designer" },
-    ],
-  },
-  {
-    delay: "1935ms",
-    name: "Misc.",
-    roles: [{ range: "Jan 2016 → Aug 2018", title: "Freelance designer" }],
-  },
-  {
-    delay: "1980ms",
-    name: "Code + Mortar",
-    roles: [{ range: "Apr 2015 → Jul 2016", title: "Product manager" }],
-  },
-  {
-    delay: "2025ms",
-    name: "BioMer",
-    roles: [{ range: "Sep 2013 → Apr 2015", title: "Co-founder" }],
+    name: "Vietta Company",
+    roles: [{ range: "Dec 2024 → Apr 2025", title: "Intern Developer" }],
   },
 ] as const;
 
-const teaching = [
+const works = [
   {
-    delay: "2115ms",
-    name: "York University",
-    roles: [{ range: "Jan 2021 → Jul 2022", title: "Instructor" }],
+    delay: "1980ms",
+    name: "Sora UI",
+    roles: [{ range: "Open source", title: "Creator" }],
   },
   {
-    delay: "2160ms",
-    name: "General Assembly",
-    roles: [{ range: "Apr 2019 → Jun 2020", title: "Instructor" }],
+    delay: "2025ms",
+    name: "Sora Type",
+    roles: [{ range: "Side project", title: "Creator" }],
+  },
+  {
+    delay: "2070ms",
+    name: "Sora Lattice",
+    roles: [{ range: "Side project", title: "Creator" }],
   },
 ] as const;
 
@@ -127,11 +126,11 @@ export default function AboutPage() {
       <main className="mx-auto max-w-[421px] px-6 pt-32 pb-32 sm:pt-[clamp(200px,33vh,320px)]">
         <header className="flex flex-col items-start">
           <Image
-            alt="Danny Williams"
+            alt="Truong Giang"
             className="about-reveal rounded-full"
             height={32}
             priority
-            src="/avatar.jpeg"
+            src="/avatar.jpg"
             style={{ "--reveal-delay": "160ms" } as CSSProperties}
             width={32}
           />
@@ -142,99 +141,92 @@ export default function AboutPage() {
             className="about-reveal"
             style={{ "--reveal-delay": "460ms" } as CSSProperties}
           >
-            Hey, I&apos;m Danny.
+            Hey, I&apos;m Truong Giang — Axyl.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "560ms" } as CSSProperties}
           >
-            I&apos;m a product designer based in Halifax, Canada.
+            I&apos;m a full-stack developer based in Ho Chi Minh City, Vietnam.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "660ms" } as CSSProperties}
           >
-            Today, I work on investing at Wealthsimple — helping make markets,
-            money, and long-term investing a bit more… well, simple.
+            Creative developer bridging the gap between design and technology —
+            interactive frontend, creative coding, UI animation, and web
+            performance.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "760ms" } as CSSProperties}
           >
-            Previously, I&apos;ve designed products at Stripe and Shopify,
-            worked with early-stage startups, taught design, and co-founded a
-            biotech company.
+            Building a motion-first React registry — not a library. Copy, tweak,
+            ship. That&apos;s{" "}
+            <a
+              href="https://ui.soralabs.io.vn"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Sora UI
+            </a>
+            .
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "860ms" } as CSSProperties}
           >
-            Much of my work has centered around systems that help people build —
-            from commerce and payments infrastructure to investing platforms.
+            Full-stack by trade, front-end at heart — source and experiments
+            live here.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "960ms" } as CSSProperties}
           >
-            I&apos;m drawn to products that create leverage — the kinds that
-            enable people to move faster, think differently, or build things
-            they otherwise couldn&apos;t.
+            WIPs, thoughts, and the small details that make an interface feel
+            alive.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "1060ms" } as CSSProperties}
           >
-            Lately, I&apos;ve been spending a lot of time thinking about
-            AI-native tools for building software.
+            If you&apos;re building something cool, weird, or fun — always down
+            to talk.
           </p>
           <p
             className="about-reveal"
             style={{ "--reveal-delay": "1160ms" } as CSSProperties}
           >
-            Outside of work, I&apos;m usually surfing, running, building side
-            projects, or collecting ideas I&apos;ll probably never use.
-          </p>
-          <p
-            className="about-reveal"
-            style={{ "--reveal-delay": "1260ms" } as CSSProperties}
-          >
-            If you&apos;re working on something ambitious or unusually
-            thoughtful… I&apos;d love to hear about it.
-          </p>
-          <p
-            className="about-reveal"
-            style={{ "--reveal-delay": "1360ms" } as CSSProperties}
-          >
             Feel free to reach out on{" "}
             <a
-              href="https://x.com/dannyjpwilliams"
+              href="https://x.com/axyl1410"
               rel="noopener noreferrer"
               target="_blank"
             >
               X
             </a>{" "}
-            or via <a href="mailto:danieljpwilliams@gmail.com">email</a>.
+            or via <a href="mailto:truonggiang.axyl@gmail.com">email</a>.
           </p>
         </div>
 
         <section className="mt-[45px]">
           <h2
             className="about-meta about-reveal text-muted"
-            style={{ "--reveal-delay": "1420ms" } as CSSProperties}
+            style={{ "--reveal-delay": "1160ms" } as CSSProperties}
           >
-            Skills
+            Links
           </h2>
           <div className="mt-4 flex flex-col gap-3">
-            {skills.map((skill) => (
+            {links.map((item) => (
               <a
                 className="about-reveal about-skill flex items-center gap-2"
-                href={skill.href}
-                key={skill.href}
+                href={item.href}
+                key={item.href}
                 rel="noopener noreferrer"
-                style={{ "--reveal-delay": skill.delay } as CSSProperties}
+                style={{ "--reveal-delay": item.delay } as CSSProperties}
                 target="_blank"
               >
-                <p className="about-label">{skill.label}</p>
+                <p className="about-label">{item.label}</p>
                 <span aria-hidden="true" className="about-divider" />
                 <SkillArrow />
               </a>
@@ -245,7 +237,32 @@ export default function AboutPage() {
         <section className="mt-[45px]">
           <h2
             className="about-meta about-reveal text-muted"
-            style={{ "--reveal-delay": "1700ms" } as CSSProperties}
+            style={{ "--reveal-delay": "1400ms" } as CSSProperties}
+          >
+            Skills
+          </h2>
+          <div className="mt-4 flex flex-col gap-3">
+            {skills.map((item) => (
+              <a
+                className="about-reveal about-skill flex items-center gap-2"
+                href={item.href}
+                key={item.href}
+                rel="noopener noreferrer"
+                style={{ "--reveal-delay": item.delay } as CSSProperties}
+                target="_blank"
+              >
+                <p className="about-label">{item.label}</p>
+                <span aria-hidden="true" className="about-divider" />
+                <SkillArrow />
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-[45px]">
+          <h2
+            className="about-meta about-reveal text-muted"
+            style={{ "--reveal-delay": "1520ms" } as CSSProperties}
           >
             Experience
           </h2>
@@ -274,12 +291,12 @@ export default function AboutPage() {
         <section className="mt-[45px]">
           <h2
             className="about-meta about-reveal text-muted"
-            style={{ "--reveal-delay": "2070ms" } as CSSProperties}
+            style={{ "--reveal-delay": "1935ms" } as CSSProperties}
           >
-            Teaching
+            Works
           </h2>
           <div className="mt-4 flex flex-col gap-7">
-            {teaching.map((job) => (
+            {works.map((job) => (
               <div
                 className="about-reveal flex flex-col gap-3"
                 key={job.name}

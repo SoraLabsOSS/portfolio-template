@@ -16,16 +16,15 @@ import {
   BackIcon,
   ChevronIcon,
   ContactIcon,
-  CosmosIcon,
   DarkIcon,
   EmailIcon,
   ExpandIcon,
+  GitHubIcon,
   HomeIconOutline,
   HomeIconSolid,
   LightIcon,
   LinkedInIcon,
   PlaygroundIconOutline,
-  PlaygroundIconSolid,
   SystemIcon,
   XIcon,
 } from "./icons";
@@ -601,14 +600,15 @@ export function SiteMenu() {
               <AboutIconOutline />
               <AboutIconSolid />
             </NavIconLink>
-            <NavIconLink
-              active={isActivePath(pathname, "/playground")}
-              href="/playground"
-              label="Playground"
+            <button
+              aria-disabled="true"
+              aria-label="Playground (coming soon)"
+              className="is-disabled"
+              disabled
+              type="button"
             >
               <PlaygroundIconOutline />
-              <PlaygroundIconSolid />
-            </NavIconLink>
+            </button>
             <button aria-label="Contact" onClick={openConnect} type="button">
               <ContactIcon />
             </button>
@@ -683,14 +683,15 @@ export function SiteMenu() {
                   </MenuLink>
                 </li>
                 <li>
-                  <MenuLink
-                    active={isActivePath(pathname, "/playground")}
-                    href="/playground"
+                  <button
+                    aria-disabled="true"
+                    className="menu-list-item is-disabled"
+                    disabled
+                    type="button"
                   >
                     <PlaygroundIconOutline />
-                    <PlaygroundIconSolid />
                     <span>Playground</span>
-                  </MenuLink>
+                  </button>
                 </li>
                 <li>
                   <button
@@ -724,7 +725,7 @@ export function SiteMenu() {
                 <li>
                   <a
                     className="menu-list-item"
-                    href="https://x.com/dannyjpwilliams"
+                    href="https://x.com/axyl1410"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -735,18 +736,18 @@ export function SiteMenu() {
                 <li>
                   <a
                     className="menu-list-item"
-                    href="https://www.cosmos.so/dannyjpwilliams"
+                    href="https://github.com/axyl1410"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    <CosmosIcon />
-                    <span>Cosmos</span>
+                    <GitHubIcon />
+                    <span>GitHub</span>
                   </a>
                 </li>
                 <li>
                   <a
                     className="menu-list-item"
-                    href="https://www.linkedin.com/in/dannyjpwilliams/"
+                    href="https://www.linkedin.com/in/axyl1410/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -757,7 +758,7 @@ export function SiteMenu() {
                 <li>
                   <a
                     className="menu-list-item"
-                    href="mailto:danieljpwilliams@gmail.com"
+                    href="mailto:truonggiang.axyl@gmail.com"
                   >
                     <EmailIcon />
                     <span>Email</span>

@@ -16,8 +16,28 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   description:
-    "Design lead at Wealthsimple. Previously at Stripe and Shopify. Building thoughtful products through design.",
-  title: "Danny Williams — Product Designer",
+    "Truong Giang (Axyl) — full-stack / creative developer based in Ho Chi Minh City. Building Sora UI, motion-first interfaces, and tools that bridge design and technology.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://nguyentruonggiang.id.vn"
+  ),
+  openGraph: {
+    description:
+      "Full-stack / creative developer building Sora UI and motion-first interfaces that feel alive.",
+    locale: "en_US",
+    siteName: "Axyl",
+    title: "Axyl — Building interfaces that feel alive",
+    type: "website",
+  },
+  title: {
+    default: "Axyl — Building interfaces that feel alive",
+    template: "%s — Axyl",
+  },
+  twitter: {
+    card: "summary_large_image",
+    description:
+      "Full-stack / creative developer building Sora UI and motion-first interfaces that feel alive.",
+    title: "Axyl — Building interfaces that feel alive",
+  },
 };
 
 const themeBootstrap = `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t)}else{document.documentElement.removeAttribute("data-theme")}}catch(e){}})();`;
